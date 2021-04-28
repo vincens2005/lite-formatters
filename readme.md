@@ -21,6 +21,10 @@
 config.jsbeautify_args = {"-r", "-s 4", "-p", "-b end-expand"} -- set jsBeautify arguments to indent with spaces.
 ```
 
+## using the formatter
+the default keymap to format the current doc is `alt+shift+f`
+the command is `formatter:format-doc`
+
 ## Adding a formatter
 
 here is an example formatter:
