@@ -17,29 +17,29 @@
 4. Extra configuration: 
     If you want to customize the cli arguments for a specific formatter, you can do this from your `init.lua` script.
     Example:
-        ```lua
-            config.jsbeautify_args = {"-r", "-s 4", "-p", "-b end-expand"} -- set jsBeautify arguments to indent with spaces.
-        ```
+```lua
+config.jsbeautify_args = {"-r", "-s 4", "-p", "-b end-expand"} -- set jsBeautify arguments to indent with spaces.
+```
 
 ## Adding a formatter
 
 here is an example formatter:
-    ```lua
-        -- lite-xl 1.16
-        -- ^^^ lite-xl version tag ^^^
-        -- for JS Beautify fortmatter
-        local config = require "core.config"
-        local formatter = require "plugins.formatter"
-        
-        config.jsbeautify_args = {"-r", "-q", "-s 1", "-t", "-p", "-b end-expand"} -- make sure to keep -r arg if you change this
-        
-        formatter.add_formatter {
-        	name = "JS Beautifier",
-        	file_patterns = {"%.js$"},
-        	command = "js-beautify $ARGS $FILENAME",
-        	args = config.jsbeautify_args
-        }
-    ```
+```lua
+-- lite-xl 1.16
+-- ^^^ lite-xl version tag ^^^
+-- for JS Beautify fortmatter
+local config = require "core.config"
+local formatter = require "plugins.formatter"
+ 
+config.jsbeautify_args = {"-r", "-q", "-s 1", "-t", "-p", "-b end-expand"} -- make sure to keep -r arg if you change this
+
+formatter.add_formatter {
+    name = "JS Beautifier",
+    file_patterns = {"%.js$"},
+    command = "js-beautify $ARGS $FILENAME",
+    args = config.jsbeautify_args
+}   
+```
 ### a few things to keep in mind
 - make sure to add the lite-xl version tag at the top
 - make sure to keep the arguments inside `config.yourformatter_args`
