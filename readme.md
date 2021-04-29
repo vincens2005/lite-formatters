@@ -4,6 +4,8 @@
 - [esformatter](https://github.com/millermedeiros/esformatter/): `formatter_esformatter.lua`
 - [gdformat](https://github.com/Scony/godot-gdscript-toolkit): `formatter_gdformat.lua`
 - [js-beautify](https://www.npmjs.com/package/js-beautify): `formatter_jsbeautify.lua`
+- [css-beautify](https://www.npmjs.com/package/js-beautify): `formatter_cssbeautify.lua`
+- [html-beautify](https://www.npmjs.com/package/js-beautify): `formatter_htmlbeautify.lua`
 - [luaformatter](https://github.com/Koihik/LuaFormatter): `formatter_luaformatter.lua`
 
 ## Installation instructions
