@@ -1,18 +1,9 @@
 -- lite-xl 1.16
 local core = require "core"
 local command = require "core.command"
-local config = require "core.config" -- probably will be neccesary
 local keymap = require "core.keymap"
-local Doc = require "core.doc" -- might not be neccesary
 
-local formatters = {
-	{ -- test formatter, will be changed in the future
-		file_patterns = {"%.js$"},
-		command = "esformatter $ARGS $FILENAME",
-		args = {"-i", "--indent-value=\"\\t\""},
-		expected_exitcodes = {0}
-	}
-}
+local formatters = {}
 
 -- stolen from linter plugin
 local function matches_any(filename, patterns)
