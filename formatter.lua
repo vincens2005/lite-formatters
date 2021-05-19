@@ -25,24 +25,26 @@ local function get_formatter(filename)
 	return formatter
 end
 
--- sometimes the autoreload plugin doesn't detects the file changed so we
+-- sometimes the autoreload plugin doesn't detect the file change so we
 -- need our own reload_doc function to reload document after formatting it
 local function reload_doc(doc)
-  local fp = io.open(doc.filename, "r")
-  local text = fp:read("*a")
-  fp:close()
+	local fp = io.open(doc.filename, "r")
+	local text = fp:read("*a")
+	fp:close()
 
-  local sel = { doc:get_selection() }
-  doc:remove(1, 1, math.huge, math.huge)
-  doc:insert(1, 1, text:gsub("\r", ""):gsub("\n$", ""))
-  doc:set_selection(table.unpack(sel))
+	-- TODO: check text has changed
 
-  doc:clean()
+	local sel = {doc:get_selection()}
+	doc:remove(1, 1, math.huge, math.huge)
+	doc:insert(1, 1, text:gsub("\r", ""):gsub("\n$", ""))
+	doc:set_selection(table.unpack(sel))
+
+	doc:clean()
 end
 
 -- formats current document and reload it to show changes
--- to prevent reloading set 'not_reload' to true
-local function format_current_doc(not_reload)
+-- to reload after formatting, set 'reload' to true
+local function format_current_doc(reload)
 	local current_doc = core.active_view.doc
 	if current_doc == nil then
 		core.error("no doc is open")
@@ -65,26 +67,22 @@ local function format_current_doc(not_reload)
 
 	system.exec(cmd) -- all systems go
 
-	if not not_reload then
-		reload_doc(core.active_view.doc)
-	end
+	if reload then reload_doc(core.active_view.doc) end
 end
 
 local Doc_save = Doc.save
 Doc.save = function(self, ...)
-  Doc_save(self, ...)
-  if config.format_on_save == true and get_formatter(self.filename) then
-    format_current_doc(true)
-    core.add_thread(function()
-    	-- Wait at least 1 second before trying to reload the document
-    	-- to let core Doc.save do its work
+	Doc_save(self, ...)
+	if config.format_on_save == true and get_formatter(self.filename) then
+		format_current_doc(true)
+		core.add_thread(function()
+			-- Wait at least 1 second before trying to reload the document
+			-- to let core Doc.save do its work
 			local current_time = os.time()
-			while current_time == os.time() do
-				coroutine.yield()
-			end
+			while current_time == os.time() do coroutine.yield() end
 			reload_doc(core.active_view.doc)
-    end)
-  end
+		end)
+	end
 end
 
 command.add("core.docview", {["formatter:format-doc"] = format_current_doc})
