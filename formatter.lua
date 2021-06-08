@@ -61,6 +61,7 @@ local function format_current_doc(reload)
 
 	local args = table.concat(formatter.args or {}, " ")
 	local filename = system.absolute_path(current_doc.filename)
+	filename = "\"" .. filename .. "\"" -- add quotes to filename
 
 	local cmd = formatter.command:gsub("$FILENAME", filename) -- replace $FILENAME with filename
 	cmd = cmd:gsub("$ARGS", args) -- replace $ARGS with args
@@ -73,7 +74,7 @@ end
 local Doc_save = Doc.save
 Doc.save = function(self, ...)
 	Doc_save(self, ...)
-	if config.format_on_save == true and get_formatter(self.filename) then
+	if config.format_on_save and get_formatter(self.filename) then
 		format_current_doc(true)
 		core.add_thread(function()
 			-- Wait at least 1 second before trying to reload the document
