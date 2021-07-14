@@ -39,7 +39,7 @@ config.format_on_save = true
 
 here is an example formatter:
 ```lua
--- lite-xl 1.16
+-- mod-version:1 lite-xl 2.00
 -- ^^^ lite-xl version tag ^^^
 -- for JS Beautify fortmatter
 local config = require "core.config"
