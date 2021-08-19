@@ -1,4 +1,4 @@
--- lite-xl 1.16
+-- mod-version:1 lite-xl 2.00
 -- for CSS Beautify fortmatter
 local config = require "core.config"
 local formatter = require "plugins.formatter"
