@@ -8,6 +8,6 @@ config.julia_args = {}
 formatter.add_formatter {
     name = "JuliaFormatter",
     file_patterns = {"%.jl$", "%.julia$"},
-    command = "julia --compile=min -e 'import JuliaFormatter: format_file; format_file(\"/home/varlad/test.jl\")'",
+    command = "julia --compile=min -e 'import JuliaFormatter: format_file; format_file(\"$FILENAME\")'",
     args = config.julia_args
 }
