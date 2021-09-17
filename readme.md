@@ -1,6 +1,7 @@
 # Formatters for [lite](https://github.com/rxi/lite) and [lite-xl](https://github.com/franko/lite-xl)
 
 ## List of formatters (Keep alphabetical)
+- [black python formatter](https://pypi.org/project/black/): `formatter_black.lua`
 - [clang-format](https://clang.llvm.org/docs/ClangFormat.html): `formatter_clangformat.lua`
 - [css-beautify](https://www.npmjs.com/package/js-beautify): `formatter_cssbeautify.lua`
 - [esformatter](https://github.com/millermedeiros/esformatter/): `formatter_esformatter.lua`
