@@ -3,7 +3,7 @@
 local config = require "core.config"
 local formatter = require "plugins.formatter"
 
-config.rustfmt_args = {"-w"}
+config.rustfmt_args = {} -- I think the default flags are good
 
 formatter.add_formatter {
 	name = "Rust Formatter",

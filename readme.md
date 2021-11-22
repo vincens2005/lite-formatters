@@ -10,6 +10,7 @@
 - [html-beautify](https://www.npmjs.com/package/js-beautify): `formatter_htmlbeautify.lua`
 - [js-beautify](https://www.npmjs.com/package/js-beautify): `formatter_jsbeautify.lua`
 - [luaformatter](https://github.com/Koihik/LuaFormatter): `formatter_luaformatter.lua`
+- [rustfmt](https://github.com/rust-lang/rustfmt): `formatter_rustfmt.lua`
 - [zigfmt](https://ziglang.org): `formatter_zigfmt.lua`
 
 ## Installation instructions
