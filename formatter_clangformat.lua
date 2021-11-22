@@ -1,5 +1,5 @@
 -- mod-version:2 lite-xl 2.00
--- for ClangFormat fortmatter
+-- for ClangFormat formatter
 local config = require "core.config"
 local formatter = require "plugins.formatter"
 
