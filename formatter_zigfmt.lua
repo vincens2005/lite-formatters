@@ -1,4 +1,4 @@
--- mod-version:1 lite-xl 2.00
+-- mod-version:2 lite-xl 2.00
 -- for zig fmt formatter
 local config = require "core.config"
 local formatter = require "plugins.formatter"
