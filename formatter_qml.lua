@@ -1,4 +1,4 @@
--- mod-version:2 lite-xl 2.00
+-- mod-version:2 lite-xl 2.0.5
 -- for qmlformat formatter
 local config = require "core.config"
 local formatter = require "plugins.formatter"
