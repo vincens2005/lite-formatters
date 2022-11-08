@@ -1,8 +1,8 @@
--- mod-version:2 lite-xl 2.00
+-- mod-version:3 lite-xl 2.1
 -- for JuliaFormatter formatter
 local config = require "core.config"
 local formatter = require "plugins.formatter"
- 
+
 config.julia_args = {}
 
 formatter.add_formatter {
