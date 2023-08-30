@@ -7,7 +7,7 @@ config.black_args = {}
 
 formatter.add_formatter {
 	name = "Black",
-	file_patterns = {"%.pyi$"},
+	file_patterns = {"%.pyi?$"},
 	command = "black $ARGS $FILENAME",
 	args = config.black_args
 }
