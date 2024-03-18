@@ -15,7 +15,7 @@
 - [luaformatter](https://github.com/Koihik/LuaFormatter): `formatter_luaformatter.lua`
 - [qmlformat](https://github.com/qt/qtdeclarative): `formatter_qml.lua`
 - [rustfmt](https://github.com/rust-lang/rustfmt): `formatter_rustfmt.lua`
-- [shmfmt](https://github.com/mvdan/sh): `formatter_sh.lua`
+- [shmfmt](https://github.com/mvdan/sh): `formatter_shfmt.lua`
 - [zigfmt](https://ziglang.org): `formatter_zigfmt.lua`
 
 ## Installation instructions
