@@ -7,6 +7,7 @@
 - [css-beautify](https://www.npmjs.com/package/js-beautify): `formatter_cssbeautify.lua`
 - [dartformat](https://dart.dev/tools/dart-format): `formatter_dartformat.lua`
 - [dfmt](https://github.com/dlang-community/dfmt): `formatter_dfmt.lua`
+- [elm-format](https://github.com/avh4/elm-format): `formatter_elmformat.lua`
 - [esformatter](https://github.com/millermedeiros/esformatter/): `formatter_esformatter.lua`
 - [gdformat](https://github.com/Scony/godot-gdscript-toolkit): `formatter_gdformat.lua`
 - [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports): `formatter_golang.lua`
