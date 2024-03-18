@@ -1,5 +1,5 @@
 -- mod-version:3 lite-xl 2.1
--- for the official Crystal formatter
+-- for Crystal's official formatter
 local config = require "core.config"
 local formatter = require "plugins.formatter"
 
