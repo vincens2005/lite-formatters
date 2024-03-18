@@ -1,5 +1,5 @@
 -- mod-version:3 lite-xl 2.1
--- for Black python formatter
+-- for Elixir's official formatter
 local config = require "core.config"
 local formatter = require "plugins.formatter"
 
