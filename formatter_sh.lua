@@ -1,5 +1,5 @@
 -- mod-version:3 lite-xl 2.1
--- https://github.com/mvdan/sh?tab=readme-ov-file
+-- https://github.com/mvdan/sh
 local config = require "core.config"
 local formatter = require "plugins.formatter"
 
