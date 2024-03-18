@@ -3,6 +3,7 @@
 ## List of formatters (Keep alphabetical)
 - [black python formatter](https://pypi.org/project/black/): `formatter_black.lua`
 - [clang-format](https://clang.llvm.org/docs/ClangFormat.html): `formatter_clangformat.lua`
+- [cljfmt](https://github.com/weavejester/cljfmt): `formatter_cljfmt.lua`
 - [cmake-format](https://github.com/cheshirekow/cmake_format): `formatter_cmakeformat.lua`
 - [css-beautify](https://www.npmjs.com/package/js-beautify): `formatter_cssbeautify.lua`
 - [dartformat](https://dart.dev/tools/dart-format): `formatter_dartformat.lua`
