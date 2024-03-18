@@ -4,6 +4,7 @@
 - [black python formatter](https://pypi.org/project/black/): `formatter_black.lua`
 - [clang-format](https://clang.llvm.org/docs/ClangFormat.html): `formatter_clangformat.lua`
 - [cmake-format](https://github.com/cheshirekow/cmake_format): `formatter_cmakeformat.lua`
+- [crystal](https://man.archlinux.org/man/crystal.1.en): `formatter_crystal.lua`
 - [css-beautify](https://www.npmjs.com/package/js-beautify): `formatter_cssbeautify.lua`
 - [dartformat](https://dart.dev/tools/dart-format): `formatter_dartformat.lua`
 - [dfmt](https://github.com/dlang-community/dfmt): `formatter_dfmt.lua`
