@@ -1,5 +1,5 @@
 -- mod-version:3 lite-xl 2.1
--- for Ormolu Haskell formatter
+-- for Haskell ormolu formatter
 local config = require "core.config"
 local formatter = require "plugins.formatter"
 
