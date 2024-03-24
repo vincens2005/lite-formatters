@@ -67,7 +67,6 @@ local function format_current_doc(reload)
 		local cmd = formatter.command[i]:gsub("$FILENAME", filename) -- replace $FILENAME with filename
 		cmd = cmd:gsub("$ARGS", args) -- replace $ARGS with args
 		system.exec(cmd) -- all systems go
-		--process.start(cmd)
 	end
 	
 	if reload then reload_doc(core.active_view.doc) end
