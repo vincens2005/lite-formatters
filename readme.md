@@ -16,6 +16,7 @@
 - [perltidy](https://github.com/perltidy/perltidy): `formatter_perltidy.lua`
 - [ocp-indent](https://github.com/OCamlPro/ocp-indent): `formatter_ocpindent.lua`
 - [qmlformat](https://github.com/qt/qtdeclarative): `formatter_qml.lua`
+- [rubocop](https://github.com/rubocop/rubocop): `formatter_rubocop.lua`
 - [rustfmt](https://github.com/rust-lang/rustfmt): `formatter_rustfmt.lua`
 - [zigfmt](https://ziglang.org): `formatter_zigfmt.lua`
 
