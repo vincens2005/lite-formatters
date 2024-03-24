@@ -3,19 +3,26 @@
 ## List of formatters (Keep alphabetical)
 - [black python formatter](https://pypi.org/project/black/): `formatter_black.lua`
 - [clang-format](https://clang.llvm.org/docs/ClangFormat.html): `formatter_clangformat.lua`
+- [cljfmt](https://github.com/weavejester/cljfmt): `formatter_cljfmt.lua`
 - [cmake-format](https://github.com/cheshirekow/cmake_format): `formatter_cmakeformat.lua`
 - [css-beautify](https://www.npmjs.com/package/js-beautify): `formatter_cssbeautify.lua`
 - [dartformat](https://dart.dev/tools/dart-format): `formatter_dartformat.lua`
 - [dfmt](https://github.com/dlang-community/dfmt): `formatter_dfmt.lua`
 - [esformatter](https://github.com/millermedeiros/esformatter/): `formatter_esformatter.lua`
 - [gdformat](https://github.com/Scony/godot-gdscript-toolkit): `formatter_gdformat.lua`
+- [google-java-format](https://github.com/google/google-java-format): `formatter_googlejavaformat.lua`
 - [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports): `formatter_golang.lua`
 - [html-beautify](https://www.npmjs.com/package/js-beautify): `formatter_htmlbeautify.lua`
 - [js-beautify](https://www.npmjs.com/package/js-beautify): `formatter_jsbeautify.lua`
 - [luaformatter](https://github.com/Koihik/LuaFormatter): `formatter_luaformatter.lua`
 - [ormolu](https://github.com/tweag/ormolu): `formatter_ormolu.lua`
+- [perltidy](https://github.com/perltidy/perltidy): `formatter_perltidy.lua`
+- [ocp-indent](https://github.com/OCamlPro/ocp-indent): `formatter_ocpindent.lua`
 - [qmlformat](https://github.com/qt/qtdeclarative): `formatter_qml.lua`
+- [rubocop](https://github.com/rubocop/rubocop): `formatter_rubocop.lua`
 - [rustfmt](https://github.com/rust-lang/rustfmt): `formatter_rustfmt.lua`
+- [vfmt](https://github.com/vlang/v): `formatter_vfmt.lua`
+- [sql-formatter](https://github.com/sql-formatter-org/sql-formatter): `formatter_sqlformatter.lua`
 - [zigfmt](https://ziglang.org): `formatter_zigfmt.lua`
 
 ## Installation instructions

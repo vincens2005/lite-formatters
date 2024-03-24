@@ -63,11 +63,18 @@ local function format_current_doc(reload)
 	local filename = system.absolute_path(current_doc.filename)
 	filename = "\"" .. filename .. "\"" -- add quotes to filename
 
-	local cmd = formatter.command:gsub("$FILENAME", filename) -- replace $FILENAME with filename
-	cmd = cmd:gsub("$ARGS", args) -- replace $ARGS with args
+	local command = formatter.command
 
-	system.exec(cmd) -- all systems go
+	if type(command) ~= "table" then
+		command = {formatter.command}
+	end
 
+	for i in pairs(command) do
+		local cmd = command[i]:gsub("$FILENAME", filename) -- replace $FILENAME with filename
+		cmd = cmd:gsub("$ARGS", args) -- replace $ARGS with args
+		system.exec(cmd) -- all systems go
+	end
+	
 	if reload then reload_doc(core.active_view.doc) end
 end
 
