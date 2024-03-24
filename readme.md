@@ -1,6 +1,7 @@
 # Formatters for [lite](https://github.com/rxi/lite) and [lite-xl](https://github.com/franko/lite-xl)
 
 ## List of formatters (Keep alphabetical)
+- [autoflake python formatter](https://pypi.org/project/autoflake/): `formatter_autoflake.lua`
 - [black python formatter](https://pypi.org/project/black/): `formatter_black.lua`
 - [clang-format](https://clang.llvm.org/docs/ClangFormat.html): `formatter_clangformat.lua`
 - [cljfmt](https://github.com/weavejester/cljfmt): `formatter_cljfmt.lua`
@@ -16,6 +17,7 @@
 - [google-java-format](https://github.com/google/google-java-format): `formatter_googlejavaformat.lua`
 - [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports): `formatter_golang.lua`
 - [html-beautify](https://www.npmjs.com/package/js-beautify): `formatter_htmlbeautify.lua`
+- [isort python formatter](https://pypi.org/project/isort/): `formatter_isort.lua`
 - [js-beautify](https://www.npmjs.com/package/js-beautify): `formatter_jsbeautify.lua`
 - [luaformatter](https://github.com/Koihik/LuaFormatter): `formatter_luaformatter.lua`
 - [ormolu](https://github.com/tweag/ormolu): `formatter_ormolu.lua`
