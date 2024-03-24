@@ -243,6 +243,15 @@
       "dependencies": { "formatter": ">=0.1" }
     },
     {
+      "id": "formatter_shfmt",
+      "mod_version": "3",
+      "name": "formatter_shfmt",
+      "path": "/formatter_shfmt.lua",
+      "type": "plugin",
+      "version": "0.1",
+      "dependencies": { "formatter": ">=0.1" }
+    },
+    {
       "id": "formatter_sqlformatter",
       "mod_version": "3",
       "name": "formatter_sqlformatter",
@@ -269,5 +278,8 @@
       "version": "0.1",
       "dependencies": { "formatter": ">=0.1" }
     }
+  ],
+  "remotes": [
+    "https://github.com/vincens2005/lite-formatters:master"
   ]
 }
