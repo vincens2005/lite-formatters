@@ -3,6 +3,7 @@
 ## List of formatters (Keep alphabetical)
 - [black python formatter](https://pypi.org/project/black/): `formatter_black.lua`
 - [clang-format](https://clang.llvm.org/docs/ClangFormat.html): `formatter_clangformat.lua`
+- [cljfmt](https://github.com/weavejester/cljfmt): `formatter_cljfmt.lua`
 - [cmake-format](https://github.com/cheshirekow/cmake_format): `formatter_cmakeformat.lua`
 - [css-beautify](https://www.npmjs.com/package/js-beautify): `formatter_cssbeautify.lua`
 - [dartformat](https://dart.dev/tools/dart-format): `formatter_dartformat.lua`
@@ -13,9 +14,13 @@
 - [html-beautify](https://www.npmjs.com/package/js-beautify): `formatter_htmlbeautify.lua`
 - [js-beautify](https://www.npmjs.com/package/js-beautify): `formatter_jsbeautify.lua`
 - [luaformatter](https://github.com/Koihik/LuaFormatter): `formatter_luaformatter.lua`
+- [perltidy](https://github.com/perltidy/perltidy): `formatter_perltidy.lua`
+- [ocp-indent](https://github.com/OCamlPro/ocp-indent): `formatter_ocpindent.lua`
 - [qmlformat](https://github.com/qt/qtdeclarative): `formatter_qml.lua`
+- [rubocop](https://github.com/rubocop/rubocop): `formatter_rubocop.lua`
 - [rustfmt](https://github.com/rust-lang/rustfmt): `formatter_rustfmt.lua`
 - [vfmt](https://github.com/vlang/v): `formatter_vfmt.lua`
+- [sql-formatter](https://github.com/sql-formatter-org/sql-formatter): `formatter_sqlformatter.lua`
 - [zigfmt](https://ziglang.org): `formatter_zigfmt.lua`
 
 ## Installation instructions
