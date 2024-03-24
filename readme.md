@@ -10,6 +10,7 @@
 - [dfmt](https://github.com/dlang-community/dfmt): `formatter_dfmt.lua`
 - [esformatter](https://github.com/millermedeiros/esformatter/): `formatter_esformatter.lua`
 - [gdformat](https://github.com/Scony/godot-gdscript-toolkit): `formatter_gdformat.lua`
+- [google-java-format](https://github.com/google/google-java-format): `formatter_googlejavaformat.lua`
 - [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports): `formatter_golang.lua`
 - [html-beautify](https://www.npmjs.com/package/js-beautify): `formatter_htmlbeautify.lua`
 - [js-beautify](https://www.npmjs.com/package/js-beautify): `formatter_jsbeautify.lua`
