@@ -18,6 +18,7 @@
 - [qmlformat](https://github.com/qt/qtdeclarative): `formatter_qml.lua`
 - [rubocop](https://github.com/rubocop/rubocop): `formatter_rubocop.lua`
 - [rustfmt](https://github.com/rust-lang/rustfmt): `formatter_rustfmt.lua`
+- [sql-formatter](https://github.com/sql-formatter-org/sql-formatter): `formatter_sqlformatter.lua`
 - [zigfmt](https://ziglang.org): `formatter_zigfmt.lua`
 
 ## Installation instructions
