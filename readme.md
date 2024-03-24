@@ -14,6 +14,7 @@
 - [js-beautify](https://www.npmjs.com/package/js-beautify): `formatter_jsbeautify.lua`
 - [luaformatter](https://github.com/Koihik/LuaFormatter): `formatter_luaformatter.lua`
 - [perltidy](https://github.com/perltidy/perltidy): `formatter_perltidy.lua`
+- [ocp-indent](https://github.com/OCamlPro/ocp-indent): `formatter_ocpindent.lua`
 - [qmlformat](https://github.com/qt/qtdeclarative): `formatter_qml.lua`
 - [rustfmt](https://github.com/rust-lang/rustfmt): `formatter_rustfmt.lua`
 - [zigfmt](https://ziglang.org): `formatter_zigfmt.lua`
