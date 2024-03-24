@@ -63,7 +63,7 @@ local function format_current_doc(reload)
 	local filename = system.absolute_path(current_doc.filename)
 	filename = "\"" .. filename .. "\"" -- add quotes to filename
 
-	for i,v in ipairs(formatter.command) do
+	for i in pairs(formatter.command) do
 		local cmd = formatter.command[i]:gsub("$FILENAME", filename) -- replace $FILENAME with filename
 		cmd = cmd:gsub("$ARGS", args) -- replace $ARGS with args
 		system.exec(cmd) -- all systems go
