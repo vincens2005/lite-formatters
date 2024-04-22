@@ -6,7 +6,16 @@
       "name": "formatter",
       "path": "/formatter.lua",
       "type": "plugin",
-      "version": "0.1"
+      "version": "0.2"
+    },
+    {
+      "id": "formatter_autoflake",
+      "mod_version": "3",
+      "name": "formatter_autoflake",
+      "path": "/formatter_autoflake.lua",
+      "type": "plugin",
+      "version": "0.1",
+      "dependencies": { "formatter": ">=0.1" }
     },
     {
       "id": "formatter_black",
@@ -90,19 +99,19 @@
       "dependencies": { "formatter": ">=0.1" }
     },
     {
-      "id": "formatter_elmformat",
+      "id": "formatter_elixir",
       "mod_version": "3",
-      "name": "formatter_elmformat",
-      "path": "/formatter_elmformat.lua",
+      "name": "formatter_elixir",
+      "path": "/formatter_elixir.lua",
       "type": "plugin",
       "version": "0.1",
       "dependencies": { "formatter": ">=0.1" }
     },
     {
-      "id": "formatter_elixir",
+      "id": "formatter_elmformat",
       "mod_version": "3",
-      "name": "formatter_elixir",
-      "path": "/formatter_elixir.lua",
+      "name": "formatter_elmformat",
+      "path": "/formatter_elmformat.lua",
       "type": "plugin",
       "version": "0.1",
       "dependencies": { "formatter": ">=0.1" }
@@ -153,6 +162,15 @@
       "dependencies": { "formatter": ">=0.1" }
     },
     {
+      "id": "formatter_isort",
+      "mod_version": "3",
+      "name": "formatter_isort",
+      "path": "/formatter_isort.lua",
+      "type": "plugin",
+      "version": "0.1",
+      "dependencies": { "formatter": ">=0.1" }
+    },
+    {
       "id": "formatter_jsbeautify",
       "mod_version": "3",
       "name": "formatter_jsbeautify",
@@ -180,6 +198,15 @@
       "dependencies": { "formatter": ">=0.1" }
     },
     {
+      "id": "formatter_ocpindent",
+      "mod_version": "3",
+      "name": "formatter_ocpindent",
+      "path": "/formatter_ocpindent.lua",
+      "type": "plugin",
+      "version": "0.1",
+      "dependencies": { "formatter": ">=0.1" }
+    },
+    {
       "id": "formatter_ormolu",
       "mod_version": "3",
       "name": "formatter_ormolu",
@@ -193,15 +220,6 @@
       "mod_version": "3",
       "name": "formatter_perltidy",
       "path": "/formatter_perltidy.lua",
-      "type": "plugin",
-      "version": "0.1",
-      "dependencies": { "formatter": ">=0.1" }
-    },
-    {
-      "id": "formatter_ocpindent",
-      "mod_version": "3",
-      "name": "formatter_ocpindent",
-      "path": "/formatter_ocpindent.lua",
       "type": "plugin",
       "version": "0.1",
       "dependencies": { "formatter": ">=0.1" }
@@ -243,6 +261,15 @@
       "dependencies": { "formatter": ">=0.1" }
     },
     {
+      "id": "formatter_shfmt",
+      "mod_version": "3",
+      "name": "formatter_shfmt",
+      "path": "/formatter_shfmt.lua",
+      "type": "plugin",
+      "version": "0.1",
+      "dependencies": { "formatter": ">=0.1" }
+    },
+    {
       "id": "formatter_sqlformatter",
       "mod_version": "3",
       "name": "formatter_sqlformatter",
@@ -269,5 +296,8 @@
       "version": "0.1",
       "dependencies": { "formatter": ">=0.1" }
     }
+  ],
+  "remotes": [
+    "https://github.com/vincens2005/lite-formatters:master"
   ]
 }
