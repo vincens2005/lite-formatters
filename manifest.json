@@ -42,7 +42,7 @@
       "path": "/formatter_cljfmt.lua",
       "type": "plugin",
       "version": "0.1",
-      "dependencies": { "formatter": ">=0.1" }
+      "dependencies": { "formatter": ">=0.2" }
     },
     {
       "id": "formatter_cmakeformat",
