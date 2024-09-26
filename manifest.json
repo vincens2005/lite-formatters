@@ -225,6 +225,15 @@
       "dependencies": { "formatter": ">=0.1" }
     },
     {
+      "id": "formatter_prettier",
+      "mod_version": "3",
+      "name": "formatter_prettier",
+      "path": "/formatter_prettier.lua",
+      "type": "plugin",
+      "version": "0.1",
+      "dependencies": { "formatter": ">=0.1" }
+    },
+    {
       "id": "formatter_qmlformat",
       "mod_version": "3",
       "name": "formatter_qmlformat",

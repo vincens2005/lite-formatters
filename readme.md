@@ -22,6 +22,7 @@
 - [luaformatter](https://github.com/Koihik/LuaFormatter): `formatter_luaformatter.lua`
 - [ormolu](https://github.com/tweag/ormolu): `formatter_ormolu.lua`
 - [perltidy](https://github.com/perltidy/perltidy): `formatter_perltidy.lua`
+- [prettier](https://github.com/prettier/prettier): `formatter_prettier.lua`
 - [ocp-indent](https://github.com/OCamlPro/ocp-indent): `formatter_ocpindent.lua`
 - [qmlformat](https://github.com/qt/qtdeclarative): `formatter_qml.lua`
 - [rubocop](https://github.com/rubocop/rubocop): `formatter_rubocop.lua`
