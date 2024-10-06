@@ -8,6 +8,6 @@ config.csharpier_args = {} -- csharpier doesn't need any args when formatting si
 formatter.add_formatter {
     name = "csharpier",
     file_patterns = {"%.cs$"},
-    command = "dotnet csharpier $ARGS $FILENAME",
+    command = "dotnet-csharpier $ARGS $FILENAME",
     args = config.csharpier_args
 }
