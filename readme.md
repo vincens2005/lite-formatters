@@ -6,6 +6,7 @@
 - [clang-format](https://clang.llvm.org/docs/ClangFormat.html): `formatter_clangformat.lua`
 - [cljfmt](https://github.com/weavejester/cljfmt): `formatter_cljfmt.lua`
 - [cmake-format](https://github.com/cheshirekow/cmake_format): `formatter_cmakeformat.lua`
+- [csharpier](https://github.com/belav/csharpier): `formatter_csharpier.lua`
 - [crystal](https://man.archlinux.org/man/crystal.1.en): `formatter_crystal.lua`
 - [css-beautify](https://www.npmjs.com/package/js-beautify): `formatter_cssbeautify.lua`
 - [dartformat](https://dart.dev/tools/dart-format): `formatter_dartformat.lua`
