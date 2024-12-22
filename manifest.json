@@ -261,6 +261,15 @@
       "dependencies": { "formatter": ">=0.1" }
     },
     {
+      "id": "formatter_scalafmt",
+      "mod_version": "3",
+      "name": "formatter_scalafmt",
+      "path": "/formatter_scalafmt.lua",
+      "type": "plugin",
+      "version": "0.1",
+      "dependencies": { "formatter": ">=0.1" }
+    },
+    {
       "id": "formatter_shfmt",
       "mod_version": "3",
       "name": "formatter_shfmt",
