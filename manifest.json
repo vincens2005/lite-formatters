@@ -261,6 +261,15 @@
       "dependencies": { "formatter": ">=0.1" }
     },
     {
+      "id": "formatter_ruff",
+      "mod_version": "3",
+      "name": "formatter_ruff",
+      "path": "/formatter_ruff.lua",
+      "type": "plugin",
+      "version": "0.1",
+      "dependencies": { "formatter": ">=0.1" }
+    },
+    {
       "id": "formatter_rustfmt",
       "mod_version": "3",
       "name": "formatter_rustfmt",

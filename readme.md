@@ -27,6 +27,7 @@
 - [ocp-indent](https://github.com/OCamlPro/ocp-indent): `formatter_ocpindent.lua`
 - [qmlformat](https://github.com/qt/qtdeclarative): `formatter_qml.lua`
 - [rubocop](https://github.com/rubocop/rubocop): `formatter_rubocop.lua`
+- [ruff](https://github.com/astral-sh/ruff): `formatter_ruff.lua`
 - [rustfmt](https://github.com/rust-lang/rustfmt): `formatter_rustfmt.lua`
 - [shfmt](https://github.com/mvdan/sh): `formatter_shfmt.lua`
 - [vfmt](https://github.com/vlang/v): `formatter_vfmt.lua`
