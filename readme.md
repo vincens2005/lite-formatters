@@ -29,6 +29,7 @@
 - [rubocop](https://github.com/rubocop/rubocop): `formatter_rubocop.lua`
 - [ruff](https://github.com/astral-sh/ruff): `formatter_ruff.lua`
 - [rustfmt](https://github.com/rust-lang/rustfmt): `formatter_rustfmt.lua`
+- [scalafmt](https://github.com/scalameta/scalafmt): `formatter_scalafmt.lua`
 - [shfmt](https://github.com/mvdan/sh): `formatter_shfmt.lua`
 - [vfmt](https://github.com/vlang/v): `formatter_vfmt.lua`
 - [sql-formatter](https://github.com/sql-formatter-org/sql-formatter): `formatter_sqlformatter.lua`
