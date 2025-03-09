@@ -19,6 +19,7 @@
 - [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports): `formatter_golang.lua`
 - [html-beautify](https://www.npmjs.com/package/js-beautify): `formatter_htmlbeautify.lua`
 - [isort python formatter](https://pypi.org/project/isort/): `formatter_isort.lua`
+- [jq](https://github.com/jqlang/jq): `formatter_jq`
 - [js-beautify](https://www.npmjs.com/package/js-beautify): `formatter_jsbeautify.lua`
 - [luaformatter](https://github.com/Koihik/LuaFormatter): `formatter_luaformatter.lua`
 - [ormolu](https://github.com/tweag/ormolu): `formatter_ormolu.lua`

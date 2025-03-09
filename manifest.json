@@ -171,6 +171,15 @@
       "dependencies": { "formatter": ">=0.1" }
     },
     {
+      "id": "formatter_jq",
+      "mod_version": "3",
+      "name": "formatter_jq",
+      "path": "/formatter_jq.lua",
+      "type": "plugin",
+      "version": "0.1",
+      "dependencies": { "formatter": ">=0.1" }
+    },
+    {
       "id": "formatter_jsbeautify",
       "mod_version": "3",
       "name": "formatter_jsbeautify",
