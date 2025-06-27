@@ -1,6 +1,7 @@
 # Formatters for [lite](https://github.com/rxi/lite) and [lite-xl](https://github.com/franko/lite-xl)
 
 ## List of formatters (Keep alphabetical)
+
 - [autoflake python formatter](https://pypi.org/project/autoflake/): `formatter_autoflake.lua`
 - [black python formatter](https://pypi.org/project/black/): `formatter_black.lua`
 - [clang-format](https://clang.llvm.org/docs/ClangFormat.html): `formatter_clangformat.lua`
