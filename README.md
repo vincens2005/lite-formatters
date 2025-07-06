@@ -1,6 +1,6 @@
-# Formatters for [Lite](https://github.com/rxi/lite) and [Lite XL](https://github.com/franko/lite-xl)
+# Formatter Plugin
 
-TODO: brief intro
+A simple formatter plugin for [lite](https://github.com/rxi/lite.git) and [Lite XL](https://github.com/lite-xl/lite-xl).
 
 ## List of formatter modules
 
