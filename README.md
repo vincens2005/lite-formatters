@@ -1,6 +1,9 @@
-# Formatters for [lite](https://github.com/rxi/lite) and [lite-xl](https://github.com/franko/lite-xl)
+# Formatters for [Lite](https://github.com/rxi/lite) and [Lite XL](https://github.com/franko/lite-xl)
 
-## List of formatters (Keep alphabetical)
+TODO: brief intro
+
+## List of formatter modules
+
 - [autoflake python formatter](https://pypi.org/project/autoflake/): `formatter_autoflake.lua`
 - [black python formatter](https://pypi.org/project/black/): `formatter_black.lua`
 - [clang-format](https://clang.llvm.org/docs/ClangFormat.html): `formatter_clangformat.lua`
@@ -34,7 +37,7 @@
 - [sql-formatter](https://github.com/sql-formatter-org/sql-formatter): `formatter_sqlformatter.lua`
 - [zigfmt](https://ziglang.org): `formatter_zigfmt.lua`
 
-## Installation instructions
+## Installation
 
 1. Copy the `formatter.lua` file into the lite/lite-xl `data/plugins` folder
 
@@ -49,23 +52,28 @@
 config.jsbeautify_args = {"-r", "-s 4", "-p", "-b end-expand"} -- set jsBeautify arguments to indent with spaces.
 ```
 
-## using the formatter
-the default keymap to format the current doc is `alt+shift+f`
-the command is `formatter:format-doc`
+## Using `formatter`
 
-to format a document at each save add the following config to
-your user `init.lua` as shown:
+The default keymap to format the current doc is `alt+shift+f`.
+
+The command is `formatter:format-doc`.
+
+To make Lite XL automatically format the current document on each save, add the following config to `USERIDR/init.lua`:
+
 ```lua
 config.format_on_save = true
 ```
 
-## Adding a formatter
+## Adding a formatter module
 
-here is an example formatter:
+Here is an example of a formatter module:
+
+`formatter_jsbeautify.lua`
+
 ```lua
--- mod-version:1 lite-xl 2.00
--- ^^^ lite-xl version tag ^^^
--- for JS Beautify fortmatter
+-- mod-version:3 lite-xl 2.1
+
+-- for the JS Beautify fortmatter
 local config = require "core.config"
 local formatter = require "plugins.formatter"
 
@@ -78,10 +86,12 @@ formatter.add_formatter {
     args = config.jsbeautify_args
 }
 ```
-### a few things to keep in mind
-- make sure to add the lite-xl version tag at the top
-- make sure to keep the arguments inside `config.yourformatter_args`
-- make sure to set a name
-- make sure to add it to the list in readme.md (and keep it alphabetical)
 
-### Then, submit a pull request
+A few things to keep in mind:
+
+- Add the correct Lite XL version tag at the top
+- Keep the arguments inside `config.formattername_args`
+- Set a name
+- Add it to the list in README.md and keep it alphabetically sorted
+
+Then make a pull request.
