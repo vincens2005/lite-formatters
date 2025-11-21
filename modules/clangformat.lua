@@ -1,0 +1,18 @@
+-- mod-version:3 lite-xl 2.1
+
+-- https://clang.llvm.org/docs/ClangFormat.html
+
+local config = require "core.config"
+local formatter = require "plugins.formatter"
+
+config.clangformat_args = {"--style=file", "--fallback-style=WebKit", "-i"}
+
+formatter.add_module() {
+	name = "ClangFormat",
+	file_patterns = {
+		"%.h$", "%.inl$", "%.cpp$", "%.cc$", "%.C$", "%.c$", "%.cxx$",
+    "%.c++$", "%.hh$", "%.H$", "%.hxx$", "%.hpp$", "%.h++$"
+	},
+	command = "clang-format $ARGS $FILENAME",
+	args = config.clangformat_args
+}

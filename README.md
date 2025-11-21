@@ -2,41 +2,6 @@
 
 A simple formatter plugin for [lite](https://github.com/rxi/lite.git) and [Lite XL](https://github.com/lite-xl/lite-xl).
 
-## List of formatter modules
-
-- [autoflake python formatter](https://pypi.org/project/autoflake/): `formatter_autoflake.lua`
-- [black python formatter](https://pypi.org/project/black/): `formatter_black.lua`
-- [clang-format](https://clang.llvm.org/docs/ClangFormat.html): `formatter_clangformat.lua`
-- [cljfmt](https://github.com/weavejester/cljfmt): `formatter_cljfmt.lua`
-- [cmake-format](https://github.com/cheshirekow/cmake_format): `formatter_cmakeformat.lua`
-- [csharpier](https://github.com/belav/csharpier): `formatter_csharpier.lua`
-- [crystal](https://man.archlinux.org/man/crystal.1.en): `formatter_crystal.lua`
-- [css-beautify](https://www.npmjs.com/package/js-beautify): `formatter_cssbeautify.lua`
-- [dartformat](https://dart.dev/tools/dart-format): `formatter_dartformat.lua`
-- [dfmt](https://github.com/dlang-community/dfmt): `formatter_dfmt.lua`
-- [elixir](https://hexdocs.pm/mix/main/Mix.Tasks.Format.html): `formatter_elixir.lua`
-- [elm-format](https://github.com/avh4/elm-format): `formatter_elmformat.lua`
-- [esformatter](https://github.com/millermedeiros/esformatter/): `formatter_esformatter.lua`
-- [gdformat](https://github.com/Scony/godot-gdscript-toolkit): `formatter_gdformat.lua`
-- [google-java-format](https://github.com/google/google-java-format): `formatter_googlejavaformat.lua`
-- [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports): `formatter_golang.lua`
-- [html-beautify](https://www.npmjs.com/package/js-beautify): `formatter_htmlbeautify.lua`
-- [isort python formatter](https://pypi.org/project/isort/): `formatter_isort.lua`
-- [js-beautify](https://www.npmjs.com/package/js-beautify): `formatter_jsbeautify.lua`
-- [luaformatter](https://github.com/Koihik/LuaFormatter): `formatter_luaformatter.lua`
-- [ormolu](https://github.com/tweag/ormolu): `formatter_ormolu.lua`
-- [perltidy](https://github.com/perltidy/perltidy): `formatter_perltidy.lua`
-- [prettier](https://github.com/prettier/prettier): `formatter_prettier.lua`
-- [ocp-indent](https://github.com/OCamlPro/ocp-indent): `formatter_ocpindent.lua`
-- [qmlformat](https://github.com/qt/qtdeclarative): `formatter_qml.lua`
-- [rubocop](https://github.com/rubocop/rubocop): `formatter_rubocop.lua`
-- [ruff](https://github.com/astral-sh/ruff): `formatter_ruff.lua`
-- [rustfmt](https://github.com/rust-lang/rustfmt): `formatter_rustfmt.lua`
-- [shfmt](https://github.com/mvdan/sh): `formatter_shfmt.lua`
-- [vfmt](https://github.com/vlang/v): `formatter_vfmt.lua`
-- [sql-formatter](https://github.com/sql-formatter-org/sql-formatter): `formatter_sqlformatter.lua`
-- [zigfmt](https://ziglang.org): `formatter_zigfmt.lua`
-
 ## Installation
 
 1. Copy the `formatter.lua` file into the lite/lite-xl `data/plugins` folder
@@ -73,7 +38,8 @@ Here is an example of a formatter module:
 ```lua
 -- mod-version:3 lite-xl 2.1
 
--- for the JS Beautify fortmatter
+
+
 local config = require "core.config"
 local formatter = require "plugins.formatter"
 
