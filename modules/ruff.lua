@@ -7,7 +7,7 @@ local formatter = require "plugins.formatter"
 
 config.ruff_args = {}
 
-formatter.add_formatter {
+formatter.add_module() {
     name = "Ruff Formatter",
     file_patterns = {"%.pyi?$"},
     command = "ruff format $FILENAME",

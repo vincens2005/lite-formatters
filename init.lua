@@ -49,7 +49,7 @@ end
 -- Add a formatter module to the modules table
 function formatter.add_module()
   return function(m)
-  	print(common.serialize(m))
+  	-- print(common.serialize(m))
     table.insert(modules, m)
   end
 end
@@ -162,9 +162,9 @@ command.add("core.docview", {["formatter:format-doc"] = format_current_doc})
 keymap.add {["alt+shift+f"] = "formatter:format-doc"}
 
 
-print("---")
-print("modules:")
-print(common.serialize(modules))
+-- print("---")
+-- print("modules:")
+-- print(common.serialize(modules))
 
 
 -------

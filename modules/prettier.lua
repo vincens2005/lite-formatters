@@ -7,7 +7,7 @@ local config = require "core.config"
 
 config.prettier_args = {"--write"}
 
-formatter.add_formatter {
+formatter.add_module() {
     name = "Prettier",
     file_patterns = {"%.less$", "%.scss$", "%.json$", "%.jsx?$", "%.ts$"},
     command = "npx prettier $ARGS $FILENAME",

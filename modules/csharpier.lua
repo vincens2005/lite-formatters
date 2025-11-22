@@ -7,7 +7,7 @@ local formatter = require "plugins.formatter"
 
 config.csharpier_args = {} -- csharpier doesn't need any args when formatting single file
 
-formatter.add_formatter {
+formatter.add_module() {
     name = "csharpier",
     file_patterns = {"%.cs$"},
     command = "dotnet-csharpier $ARGS $FILENAME",
