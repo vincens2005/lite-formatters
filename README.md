@@ -4,29 +4,32 @@ A simple formatter plugin for [lite](https://github.com/rxi/lite.git) and [Lite 
 
 ## Installation
 
-1. Copy the `formatter.lua` file into the lite/lite-xl `data/plugins` folder
+Use `lpm` to install this plugin: `lpm install formatter`.
 
-2. To install any specific formatter, copy the corresponding file into the `data/plugins` folder. List of formatters is at the top of this file.
+> [!NOTE]
+> This plugin does not provide the bundled executable binary files needed to run the formatters themselves.
+> You must install the desired formatters yourself.
 
-3. Make sure you have the command that formatter uses installed, or it won't work.
+If you want to customize the cli arguments for a specific formatter, you can do this from your `init.lua` script.
 
-4. Extra configuration:
-    If you want to customize the cli arguments for a specific formatter, you can do this from your `init.lua` script.
-    Example:
+Here's and example:
+
 ```lua
 config.jsbeautify_args = {"-r", "-s 4", "-p", "-b end-expand"} -- set jsBeautify arguments to indent with spaces.
 ```
 
-## Using `formatter`
+## Usage
 
 The default keymap to format the current doc is `alt+shift+f`.
 
 The command is `formatter:format-doc`.
 
-To make Lite XL automatically format the current document on each save, add the following config to `USERIDR/init.lua`:
+To make Lite XL automatically format the current document on each save, add the following config to `USERDIR/init.lua`:
 
 ```lua
-config.format_on_save = true
+config.plugins.formatter = common.merge({
+  format_on_save = true
+}, config.plugins.formatter)
 ```
 
 ## Adding a formatter module
@@ -38,7 +41,7 @@ Here is an example of a formatter module:
 ```lua
 -- mod-version:3 lite-xl 2.1
 
-
+-- https://www.npmjs.com/package/js-beautify
 
 local config = require "core.config"
 local formatter = require "plugins.formatter"
@@ -60,4 +63,4 @@ A few things to keep in mind:
 - Set a name
 - Add it to the list in README.md and keep it alphabetically sorted
 
-Then make a pull request.
+Then make a pull request on Github.
