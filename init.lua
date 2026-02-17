@@ -170,4 +170,7 @@ keymap.add {["alt+shift+f"] = "formatter:format-doc"}
 -------
 -- ? --
 -------
+core.add_thread(function()
+	formatter.load()
+end)
 return formatter
