@@ -10,6 +10,7 @@ local keymap = require "core.keymap"
 -------
 -- ? --
 -------
+
 local formatter = {}
 local modules = {}
 
@@ -49,7 +50,6 @@ end
 -- Add a formatter module to the modules table
 function formatter.add_module()
   return function(m)
-  	-- print(common.serialize(m))
     table.insert(modules, m)
   end
 end
@@ -153,24 +153,21 @@ end
 --------------
 -- Commands --
 --------------
+
 command.add("core.docview", {["formatter:format-doc"] = format_current_doc})
 
 
 -----------------
 -- Keybindings --
 -----------------
+
 keymap.add {["alt+shift+f"] = "formatter:format-doc"}
-
-
--- print("---")
--- print("modules:")
--- print(common.serialize(modules))
 
 
 -------
 -- ? --
 -------
-core.add_thread(function()
-	formatter.load()
-end)
+
+core.add_thread(function() formatter.load() end)
+
 return formatter
